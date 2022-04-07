@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,400;1,500&family=Comfortaa:wght@400;500;600;700&family=Podkova:wght@700&family=Poppins:wght@400;600&family=Roboto+Condensed&family=Rowdies:wght@700&family=Ubuntu:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+.container {
+    margin: auto;
+}
+
+.menu .container .row {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
+
+.menu .container .row .left_menu {
+    width: 25%;
+}
+
+.menu .container .row .left_menu .logo a {
+    display: flex;
+    color: black;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-family: Podkova;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    align-items: center;
+}
+
+.menu .container .row .left_menu .logo a span {
+    color: rgb(249, 115, 22);
+    text-transform: uppercase;
+    font-family: Podkova;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.menu .container .row .left_menu .logo img {
+    width: 5rem;
+}
+
+.menu .container .row .center_menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu .container .row .center_menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.menu .container .row .center_menu ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu .container .row .center_menu ul li a {
+    position: relative;
+    color: black;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    font-family: Roboto;
+}
+
+.menu .container .row .center_menu ul li a.hover_menu:hover::after {
+    left: 0;
+    right: 0;
+}
+
+.menu .container .row .center_menu ul li a.hover_menu::after {
+    content: "";
+    position: absolute;
+    transition: all;
+    left: 50%;
+    right: 50%;
+    height: 0.25rem;
+    bottom: -0.5rem;
+    transition-duration: 150ms;
+    background-color: rgb(249, 115, 22);
+    transition-timing-function: linear;
+}
+
+.btn_menu {
+    font-family: Roboto;
+    background-color: rgb(255, 149, 73);
+    color: white !important;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 1.5rem;
+    border: 0;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-style: oblique;
+}
+
+.btn_menu:hover {
+    background-color: rgb(249, 115, 22);
+}
+
+.slide_show_image {
+    height: 640px;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    background: #364d79;
+}
